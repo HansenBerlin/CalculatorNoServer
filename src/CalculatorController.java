@@ -7,15 +7,14 @@ public class CalculatorController
 
     public double rechnen(String input) 
     {
+        Double a;
+        int b;
         int n = input.length();
 
         for (int i = 0; i < n; i++) 
         {
             clean.add(Character.toString(input.charAt(i)));
-        }
-
-        Double a;
-        int b;
+        }        
 
         if (input.charAt(0) == '-' && input.charAt(1) != '-') 
         {
@@ -156,7 +155,6 @@ public class CalculatorController
             else
                 testPassed = false;            
         }
-
         return testPassed;
     }
     
